@@ -13,6 +13,8 @@ export const UrlParameter = () => {
         クエリパラメータは{query.has("name") ? "あります。" : "ないです。"}
         {query.get("name")}です。
       </p>
+      {query.append("name2", "追加できます")}
+      <p>{query.get("name2")}</p>
     </div>
   );
 };
